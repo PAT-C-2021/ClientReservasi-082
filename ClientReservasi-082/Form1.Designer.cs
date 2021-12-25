@@ -44,6 +44,7 @@ namespace ClientReservasi_082
             this.btHapus = new System.Windows.Forms.Button();
             this.btClear = new System.Windows.Forms.Button();
             this.dtPemesanan = new System.Windows.Forms.DataGridView();
+            this.buttonBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtPemesanan)).BeginInit();
             this.SuspendLayout();
             // 
@@ -178,11 +179,22 @@ namespace ClientReservasi_082
             this.dtPemesanan.TabIndex = 14;
             this.dtPemesanan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtPemesanan_CellClick);
             // 
+            // buttonBack
+            // 
+            this.buttonBack.Location = new System.Drawing.Point(13, 13);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 15;
+            this.buttonBack.Text = "kembali";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(894, 452);
+            this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.dtPemesanan);
             this.Controls.Add(this.btClear);
             this.Controls.Add(this.btHapus);
@@ -223,6 +235,7 @@ namespace ClientReservasi_082
         private System.Windows.Forms.Button btHapus;
         private System.Windows.Forms.Button btClear;
         private System.Windows.Forms.DataGridView dtPemesanan;
+        private System.Windows.Forms.Button buttonBack;
     }
 }
 

@@ -107,5 +107,12 @@ namespace ClientReservasi_082
             btSimpan.Enabled = false;
             textBoxID.Enabled = false;
         }
+
+        private void buttonBack_Click(object sender, EventArgs e)
+        {
+            Login fm1 = new Login();
+            this.Hide();
+            fm1.Show();
+        }
     }
 }
